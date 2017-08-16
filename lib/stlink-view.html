@@ -1,0 +1,76 @@
+<atom-panel class='padded'>
+    <h4 class='block'>stlink Flash Tool</h4>
+
+    <atom-panel class='padded'>
+
+      <div class='inset-panel' id='stlink-progress-panel'>
+          <div class='panel-heading'>Progress</div>
+          <div class='panel-body padded'>
+            <div class='block'>
+                <span class='loading loading-spinner-tiny inline-block'></span>
+                <span class='inline-block' id='stlink-message'>programming device ...</span>
+            </div>
+          </div>
+      </div>
+
+      <div class='inset-panel' id='stlink-error-panel'>
+          <div class='panel-heading'>ERROR</div>
+            <div class='block'>
+              <div class='panel-body padded'>
+                <span class='loading inline-block icon-alert'></span>
+                <span class='inline-block' id='stlink-error'>stlink failed</span>
+            </div>
+          </div>
+          <p></p>
+      </div>
+
+      <div class='inset-panel' id='stlink-output-panel'>
+          <div class='panel-heading'>Output</div>
+            <div class='block'>
+              <div class='panel-body padded'>
+                <span class='inline-block' id='stlink-output'>
+                  stlink says ....
+                </span>
+            </div>
+          </div>
+          <p></p>
+      </div>
+
+      <div class='inset-panel' id='stlink-settings-panel'>
+          <div class='panel-heading'>Settings</div>
+          <div class='panel-body padded'>
+              <div style='overflow-x: auto;'>
+                  <div class='block'>
+                    <div class='form-group'>
+                      <label>board serial</label>
+                      <select class='form-control monitor-option' id='stlink-serial'>
+                      </select>
+                    </div>
+                  </div>
+                  <div class='block'>
+                      <div>file (.bin or .hex)</div>
+                      <input class='input-text native-key-bindings' type='text' id='stlink-file'>
+                  </div>
+                  <div class='block'>
+                      <div>address (only needed for .bin files)</div>
+                      <input class='input-text native-key-bindings' type='text' id='stlink-address'>
+                  </div>
+                  <div class='block'>
+                    <label class='input-label'>
+                        <input class='input-toggle' type='checkbox' id='stlink-reset'> reset
+                    </label>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </atom-panel>
+
+    <p>
+      <div class='block' style='text-align:center;'>
+          <button class='btn icon icon-zap inline-block-tight' id='stlink-flash'>flash</button>
+          <button class='btn icon icon-flame inline-block-tight' id='stlink-flasherase'>erase</button>
+          <button class='btn icon icon-x inline-block-tight' id='stlink-close'>close</button>
+      </div>
+    </p>
+
+</atom-panel>

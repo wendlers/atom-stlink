@@ -1,0 +1,39 @@
+{
+  "name": "stlink",
+  "main": "./lib/stlink",
+  "version": "0.0.0",
+  "description": "Flash your STM32 / stlink V2 device from Atom with stlink",
+  "keywords": [
+    "stlink",
+    "STM32",
+    "mbed",
+    "flash",
+    "embedded"
+  ],
+  "activationCommands": {
+    "atom-workspace": [
+      "stlink:toggle",
+      "stlink:flash",
+      "stlink:erase"
+    ]
+  },
+  "repository": "https://github.com/wendlers/atom-stlink",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "atom-package-deps": "^4.0.1",
+    "findit": "^2.0.0"
+  },
+  "package-deps": [
+    "busy"
+  ],
+  "consumedServices": {
+    "busy": {
+      "versions": {
+        "^1.0.0": "consumeBusy"
+      }
+    }
+  }
+}

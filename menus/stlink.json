@@ -1,0 +1,42 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "stlink: toggle",
+        "command": "stlink:toggle"
+      },
+      {
+        "label": "stlink: flash",
+        "command": "stlink:flash"
+      },
+      {
+        "label": "stlink: erase",
+        "command": "stlink:erase"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "stlink",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "stlink:toggle"
+            },
+            {
+              "label": "Flash",
+              "command": "stlink:flash"
+            },
+            {
+              "label": "Erase",
+              "command": "stlink:erase"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
