@@ -8,7 +8,7 @@ This package allows you to flash your STM32/stlink V2 device from within Atom us
 * Flash `.hex` or `.bin` file
 * Erase flash
 
-![screenshot](https://raw.githubusercontent.com/wendlers/atom-pyocd/master/doc/stlink.png)
+![screenshot](https://raw.githubusercontent.com/wendlers/atom-stlink/master/doc/stlink.png)
 
 ## Prerequisites
 
