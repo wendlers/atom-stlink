@@ -8,6 +8,8 @@ This package allows you to flash your STM32/stlink V2 device from within Atom us
 * Flash `.hex` or `.bin` file
 * Erase flash
 
+![screenshot](https://raw.githubusercontent.com/wendlers/atom-pyocd/master/doc/stlink.png)
+
 ## Prerequisites
 
 To use stlink, make sure you installed the `st-flash` and `st-info` binaries on your system. See instructions [here](https://github.com/texane/stlink) on how to get the binaries.

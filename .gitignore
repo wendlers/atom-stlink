@@ -2,3 +2,5 @@
 npm-debug.log
 node_modules
 stlink_settings.json
+pyocd_settings.json
+sermon_settings.json
