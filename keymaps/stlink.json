@@ -3,5 +3,8 @@
     "shift-alt-p": "stlink:toggle",
     "shift-alt-s": "stlink:flash",
     "shift-alt-e": "stlink:erase"
+  },
+  ".stlink": {
+    "escape": "stlink:toggle"
   }
 }
